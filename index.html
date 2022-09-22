@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panda Clock</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style/panda.css">
-    <link rel="stylesheet" href="style/digital.css">
-    <link rel="stylesheet" href="style/scroll.css">
+    <link rel="stylesheet" href="style/panda.css" />
+    <link rel="stylesheet" href="style/digital.css" />
+    <link rel="stylesheet" href="style/scroll.css" />
     <!-- stylesheet -->
 
-    <link rel="icon" type="image/png" sizes="16x16" href="public/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <style>
-    </style>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
     <div id="clock-container">
-        <div class="face">
-            <div class="ears">
-                <div class="ear" id="ear1"><div></div></div>
-                <div class="ear" id="ear2"><div></div></div>
-            </div>
-            <div class="eyepatch">
-                <div class="eye" id="e1"><div class="eyeball"><div class="eyewhite"></div></div></div>
-                <div class="eye" id="e2"><div class="eyeball"><div class="eyewhite"></div></div></div>
-            </div>
-            <div class="nose"></div>
-            <div class="lips"><div></div><div></div></div>
-            <div class="chin"></div>
+      <div class="face">
+        <div class="ears">
+          <div class="ear" id="ear1"><div></div></div>
+          <div class="ear" id="ear2"><div></div></div>
         </div>
+        <div class="eyepatch">
+          <div class="eye" id="e1">
+            <div class="eyeball"><div class="eyewhite"></div></div>
+          </div>
+          <div class="eye" id="e2">
+            <div class="eyeball"><div class="eyewhite"></div></div>
+          </div>
+        </div>
+        <div class="nose"></div>
+        <div class="lips">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="chin"></div>
+      </div>
 
-        
-        <div id="clock">
-            <div id="min"></div>
-            <div id="sec"></div>
-            <div id="hour"><div></div></div>
-            <div id="centre"></div>
-        </div>
+      <div id="clock">
+        <div id="min"></div>
+        <div id="sec"></div>
+        <div id="hour"><div></div></div>
+        <div id="centre"></div>
+      </div>
     </div>
 
     <div id="digital-container">
-        <span>
-            <div id="digital"></div>   
+      <span>
+        <div id="digital"></div>
         <button id="reset" onclick="reset_clock()">Reset</button>
-        </span>
-        <section id="scroll-container">
-            <div id="scroll-h">
-                <h1>Hr</h1>
-                <h1>Mn</h1>
-                <h1>S</h1>
-            </div>
-            <div class="scroll"><div></div></div>
-            <div class="scroll"><div></div></div>
-            <div class="scroll"><div></div></div>
-        </section>
-
+      </span>
+      <section id="scroll-container">
+        <div id="scroll-h">
+          <h1>Hr</h1>
+          <h1>Mn</h1>
+          <h1>S</h1>
+        </div>
+        <div class="scroll"><div></div></div>
+        <div class="scroll"><div></div></div>
+        <div class="scroll"><div></div></div>
+      </section>
     </div>
 
     <script src="clock.js"></script>
-</body>
+  </body>
 </html>

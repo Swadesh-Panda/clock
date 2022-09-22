@@ -9,10 +9,12 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 100px;
+    background: #211d20;
 }
 
 #clock-container {
     position: relative;
+    scale: 0.8;
 }
 
 .face {
