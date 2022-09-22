@@ -1,0 +1,30 @@
+#profile {
+    margin: 50px;
+}
+
+#status {
+    height: 20px;
+    position: relative;
+    right: 50px;
+    bottom: 40px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+#pp{
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+#profile p,h1,h2,h3 {
+    color: white;
+}
+
+#profile a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+#pp {
+    width: 256px;
+}
