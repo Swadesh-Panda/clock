@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+#clock-container {
+    position: relative;
+}
+
+.face {
+    margin: 20px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    box-shadow: inset 0px 0px 30px rgb(43, 43, 43);
+    border-radius: 100% 100% 90% 90%;
+}
+
+.ears {
+    width: 98%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.ear {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: -30px;
+    height: 120px;
+    width: 160px;
+    background-color: gray;
+
+    box-shadow: inset 0px 2px 20px rgba(49, 49, 49, 0.678);
+}
+
+#ear1 {
+    border-radius: 100% 100% 70% 0px;
+    transform: rotateZ(-25deg);
+}
+
+#ear1 div {
+
+    position: relative;
+    height: 100px;
+    width: 140px;
+    background-color: rgb(73, 73, 73);
+    box-shadow: inset 0px 30px 30px black;
+    border-radius: 100% 100% 60% 0px;
+}
+
+#ear2 div {
+
+    box-shadow: inset 0px 30px 30px black;
+
+    position: relative;
+    height: 100px;
+    width: 140px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 100% 100% 0px 60%;
+}
+
+#ear2 {
+
+    border-radius: 100% 100% 0px 70%;
+    transform: rotateZ(25deg);
+}
+
+.eyepatch {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.eye {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 100%;
+    height: 200px;
+    width: 150px;
+
+    box-shadow: inset 0px 0px 25px rgb(80, 80, 80);
+}
+
+.eyeball {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: 50px;
+
+    height: 80px;
+    width: 50px;
+    background-color: black;
+    border-radius: 100%;
+
+    box-shadow: 0px 5px 6px rgb(209, 209, 209);
+}
+
+.eyewhite {
+    position: relative;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#e1 {
+    transform: rotateZ(25deg);
+}
+
+#e1 .eyeball {
+    left: 25px;
+    transform: rotateZ(-25deg);
+}
+
+#e2 {
+
+    transform: rotateZ(-25deg);
+}
+
+#e2 .eyeball {
+    right: 25px;
+    transform: rotateZ(25deg);
+}
+
+.nose {
+    position: relative;
+    background-color: black;
+    top: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 25% 100% 25% 40%;
+    transform: rotateZ(-45deg);
+
+    box-shadow: inset -5px 5px 15px rgba(255, 255, 255, 0.781);
+}
+
+.lips {
+    display: inline-flex;
+    position: relative;
+    top: -18px;
+    width: 170px;
+}
+
+.lips div {
+    border-radius: 100%;
+    height: 60px;
+    width: 100%;
+    box-shadow: inset 0px -6px 1px black;
+}
+
+.chin {
+    position: relative;
+    top: -45px;
+    border-radius: 100%;
+    height: 50px;
+    width: 90px;
+    border-bottom: 10px solid rgba(161, 161, 161, 0.301);
+    box-shadow: 0px 10px 10px rgba(161, 161, 161, 0.301);
+}
+
+
+#clock {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    border-radius: 100%;
+}
+
+#centre {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: rgb(53, 53, 53);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#hour {
+    height: 30%;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 25%;
+    transform-origin: 45% 83%;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 0px 10px gray;
+}
+
+#hour div {
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    height: 20px;
+    width: 12px;
+    border: 5px solid black;
+}
+
+#min {
+    height: 45%;
+    width: 10px;
+    background-color: rgb(107, 204, 241);
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 88%;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#sec {
+    height: 50%;
+    width: 2px;
+    background-color: red;
+    position: absolute;
+    top: 6%;
+    transform-origin: 30% 88%;
+    box-shadow: 0px 0px 10px red;
+}
+
+
+
+
+@media (max-width:1234px) {
+    body {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width:980px) {
+    body {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width:650px) {
+    body {
+        margin: 0px;
+        height: 100vh;
+    }
+
+    #clock-container {
+        position: absolute;
+        top: -30%;
+    }
+
+    #digital-container {
+        position: absolute;
+        bottom: -10%;
+    }
+}
+
+@media (max-width:400px) {
+    #clock-container {
+        position: absolute;
+        transform: scale(0.9);
+        top: -35%;
+    }
+
+    #digital-container {
+        position: absolute;
+        bottom: -10%;
+    }
+}
